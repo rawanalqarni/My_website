@@ -1,6 +1,6 @@
 ---
 bio: Blog created by Rawan
-education:
+education:  
 email: ""
 highlight_name: true
 interests:

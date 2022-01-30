@@ -1,0 +1,38 @@
+---
+title: Car Dateset EDA
+author: Rawan ALQarni
+date: '2022-01-30'
+slug: car-dateset-eda
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-01-30T22:26:45Z'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+### *Cars Dataset EDA*
+
+1- import the datset
+
+```{r}
+data(cars)
+```
+
+2- Explore the Dataset 
+```{r}
+summary(cars)
+```
+
+3- Dada vis 
+```{r}
+library(ggplot2)
+vis <- ggplot(cars, aes(speed, dist, color=speed))+geom_point()
+vis+scale_color_gradientn(colors=rainbow(5))
+```
+

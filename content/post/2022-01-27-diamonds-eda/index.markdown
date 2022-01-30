@@ -17,11 +17,7 @@ image:
 projects: []
 ---
 
-
-
 ## Diamonds EDA
-
-
 
 
 

@@ -2,7 +2,7 @@
 widget: hero
 headless: true
 weight: 10
-title: <span style="color:#505E6C; font-size:70px">Let's create websites to publish our amazing Data Science reports </span>
+title: <span style="color:#505E6C; font-size:70px; font-family:Cursive">Let's create websites to publish our amazing Data Science reports </span>
 hero_media: logo.png
 
 design:
