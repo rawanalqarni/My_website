@@ -1,0 +1,103 @@
+---
+title: Palmer Penguins EDA
+author: Rawan ALQarni
+date: '2022-01-27'
+slug: palmer-penguins-eda
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-01-27T12:57:08Z'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+```{r fig.align="center",out.width="80%", echo=FALSE}
+knitr::include_graphics("dataset-thumbnail.png")
+```
+
+### Palmer Penguins Dataset EDA 
+- This notebook include: 
+  - Introduction
+  - EDA 
+  - Data Visualization 
+  - Conclusion
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+### Introduction
+
+#### Palmer Penguins Dataset
+
+Palmer penguin data were collected and made available by Dr. Kristen Gorman and the Palmer Station, Antarctica LTER, a member of the Long Term Ecological Research Network.
+
+The dataset veriables :
+- species: penguin species (Chinstrap, Adélie, or Gentoo)
+- culmen_length_mm: culmen length (mm)
+- culmen_depth_mm: culmen depth (mm)
+- flipper_length_mm: flipper length (mm)
+- body_mass_g: body mass (g)
+- island: island name (Dream, Torgersen, or Biscoe) in the Palmer Archipelago (Antarctica)
+- sex: penguin sex
+
+Sourse of the dataset:
+- built-in dataset in r
+
+
+Objectives: 
+- Ehowcase my technical skill 
+- Explore Palmer Penguins dataset (EDA phase)
+- Practice my EDA and Visualization skills in python 
+
+
+### Exploratory Data Analysis
+
+1- import the library and the palmer penguins dataset 
+
+```{r pressure, include=TRUE}
+install.packages("palmerpenguins")
+```
+
+
+```{r include=FALSE}
+library(palmerpenguins)
+library(dplyr)
+library(ggplot2)
+library(readr)
+library(tibble)
+```
+
+
+2- Create a tibble for the penguins dataset 
+```{r}
+df_penguins <- as_tibble(penguins)
+
+```
+
+3- Explore the dataset
+```{r}
+head(df_penguins)
+```
+
+
+```{r}
+# How many rows and colums and what are there datatypes?
+glimpse(df_penguins)
+
+```
+
+### Data Visualization
+
+```{r}
+ggplot(df_penguins, aes(species, fill=species)) + geom_bar()
+```
+

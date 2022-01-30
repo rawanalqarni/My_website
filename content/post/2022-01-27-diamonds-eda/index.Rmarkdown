@@ -1,0 +1,86 @@
+---
+title: Diamonds EDA
+author: Rawan ALQarni
+date: '2022-01-27'
+slug: diamonds-eda
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-01-27T13:35:11Z'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Diamonds EDA
+```{r include=FALSE}
+library(tibble)
+library(dplyr)
+library(ggplot2)
+```
+
+
+```{r }
+data(diamonds)
+table1 <- as_tibble(diamonds)
+```
+
+## 9.2: How many diamonds with a clarity of category “IF” are present in the data-set?
+
+```{r}
+sum_of_IF <- sum(diamonds$clarity == "IF")
+sum_of_IF
+```
+
+
+## 9.3: What fraction of the total do they represent?
+
+```{r}
+
+total <- count(diamonds)
+fraction_of_clarity <- (sum_of_IF / total)
+```
+
+
+
+## 9.5: What is the cheapest diamond price overall?
+```{r}
+cheapest_diamond <- min(diamonds$price)
+```
+
+## 9.6: What is the range of diamond prices?
+```{r}
+range(diamonds$price) 
+```
+
+## 9.7:  What is the average diamond price in each category of cut and color?
+- for color
+```{r}
+diamonds %>% 
+  group_by(color = color) %>%
+  summarise(Average_Price = mean(price))
+
+```
+- for cut 
+```{r}
+diamonds %>% 
+  group_by(cut = cut) %>%
+  summarise(Average_Price = mean(price))
+```
+
+
+### Data Vis 
+```{r}
+library(ggplot2)
+ggplot(diamonds, aes(cut))+geom_bar()
+```
+
+
+
