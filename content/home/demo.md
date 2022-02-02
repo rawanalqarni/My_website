@@ -12,7 +12,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 15
 
-title: Create Website using Blogdown Package in R
+title: 
 subtitle:
 
 design:

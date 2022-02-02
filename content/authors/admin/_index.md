@@ -1,33 +1,27 @@
 ---
 bio: Blog created by Rawan
 education:  
-email: ""
+email: "rawan_981@outlook.sa"
 highlight_name: true
 interests:
-- Creating static website
-- Host the website in any server
-- The website is generated from R Markdown documents
+- Data Science 
+- Programming 
+- Artificial Intelligence 
 organizations:
-- name: Blogdown get started
-  url: https://bookdown.org/yihui/blogdown/get-started.html
-role: A powerful package in R
+- name: Jubail University College
+  url: 
+role: Fresh Graduate
 social:
-- icon: envelope
-  icon_pack: fas
-  link: /#contact
 - display:
     header: true
-  icon: twitter
-  icon_pack: fab
-  label: Follow me on Twitter
-  link: https://twitter.com/GeorgeCushen
 - icon: github
   icon_pack: fab
   link: https://github.com/rawanalqarni
 superuser: true
-title: Blogdown
+title: Computer Scientist 
 ---
 
-Blogdown is a package in R for creating static website like blogs, the package automatically provide all the content of the website allowing users to customize their website. The website theme is also provided via Hugo which is a static site generators that provide plenty of static themes to choose from [here](https://gohugo.io/).
+Hi Iam Rawan, this is my website where I share my work to showcase my skills. Iam interested in Data Science, so you probably going to see reports related to that. Iam open to work if you find my work exciting contact me on my email <3. This my github account [here](https://github.com/rawanalqarni)  
 
-{{< icon name="download" pack="fas" >}} Download the {{< staticref "uploads/blogdown.pdf" "newtab" >}}blogdown book{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download the {{< staticref "uploads/Rawan Alqarni-CV.pdf" "newtab" >}} CV {{< /staticref >}}.
+

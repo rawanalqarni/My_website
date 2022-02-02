@@ -1,14 +1,14 @@
 ---
-title: Car Dateset EDA
+title: Car Dataset EDA
 author: Rawan ALQarni
-date: '2022-01-30'
-slug: car-dateset-eda
+date: '2022-01-31'
+slug: car-dataset-eda
 categories: []
 tags: []
 subtitle: ''
 summary: ''
 authors: []
-lastmod: '2022-01-30T22:26:45Z'
+lastmod: '2022-01-31T10:22:54Z'
 featured: no
 image:
   caption: ''
@@ -16,16 +16,9 @@ image:
   preview_only: no
 projects: []
 ---
-### *Cars Dataset EDA*
-
-1- import the datset
 
 
-```r
-data(cars)
-```
-
-2- Explore the Dataset 
+1- import dataset 
 
 ```r
 summary(cars)
@@ -41,13 +34,16 @@ summary(cars)
 ##  Max.   :25.0   Max.   :120.00
 ```
 
-3- Dada vis 
+
+##روان 
+
+2- data vis 
 
 ```r
 library(ggplot2)
-vis <- ggplot(cars, aes(speed, dist, color=speed))+geom_point()
+vis <- ggplot(cars , aes(speed,dist, color=speed))+geom_point()
 vis+scale_color_gradientn(colors=rainbow(5))
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
 
