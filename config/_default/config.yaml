@@ -4,7 +4,7 @@ theme: "starter-hugo-academic"
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Blogdown in R # Website name
+title: Rawan AlQarni # Website name
 baseurl: 'https://academic-demo.netlify.app/' # Website URL
 copyright: '' # Footer text, e.g. '© {year} Me'
 
@@ -70,3 +70,6 @@ related:
       weight: 70
 security:
   _merge: deep
+  
+
+ 
