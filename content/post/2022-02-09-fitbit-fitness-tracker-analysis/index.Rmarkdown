@@ -17,6 +17,14 @@ image:
 projects: []
 ---
 
+
+<style type="text/css">
+  body{
+  font-size: 12pt;
+  font-family:'Times New Roman'
+}
+</style>
+
 # FitBit Fitness Tracker Data
 ```{r fig.align="center",out.width="100%", echo=FALSE}
 knitr::include_graphics("img.jpg")
